@@ -169,7 +169,7 @@ body {
 .snapshot,
 .hero-stats article,
 .experience-card,
-.project-feature,
+.project-item,
 .skill-panel,
 .contact-banner {
   background: var(--paper);
@@ -231,7 +231,7 @@ body {
 .hero-stats p,
 .intro-notes p,
 .experience-card li,
-.project-feature p,
+.project-body p,
 .skill-panel p {
   color: var(--muted);
   line-height: 1.7;
@@ -323,37 +323,60 @@ body {
   font-weight: 600;
 }
 
-.projects-layout {
+.projects-accordion {
   display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 18px;
+  gap: 16px;
 }
 
-.project-feature {
-  padding: 26px;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+.project-item {
+  overflow: hidden;
 }
 
-.project-feature-main {
-  grid-column: span 2;
+.project-item[open] {
   background:
     linear-gradient(135deg, rgba(211, 95, 45, 0.09), transparent 45%),
     var(--paper-strong);
 }
 
-.project-meta {
+.project-summary {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: 18px;
   align-items: center;
-  margin-bottom: 18px;
+  padding: 24px 26px;
+  cursor: pointer;
+  list-style: none;
 }
 
-.project-meta span {
+.project-summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-summary::after {
+  content: "+";
+  flex-shrink: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.project-item[open] .project-summary::after {
+  content: "-";
+}
+
+.project-label {
   color: var(--muted);
   font-size: 0.92rem;
+  text-align: right;
+}
+
+.project-body {
+  padding: 0 26px 24px;
+  border-top: 1px solid var(--line);
+}
+
+.project-body p {
+  margin: 18px 0 0;
 }
 
 .project-tag {
@@ -365,33 +388,6 @@ body {
   letter-spacing: 0.14em;
 }
 
-.project-details {
-  margin-top: auto;
-  padding-top: 18px;
-}
-
-.project-details summary {
-  list-style: none;
-  cursor: pointer;
-  color: var(--accent);
-  font-weight: 700;
-}
-
-.project-details summary::-webkit-details-marker {
-  display: none;
-}
-
-.project-details summary::after {
-  content: " +";
-}
-
-.project-details[open] summary::after {
-  content: " -";
-}
-
-.project-details[open] .project-points {
-  margin-top: 14px;
-}
 
 .skills-board {
   display: grid;
@@ -422,15 +418,10 @@ body {
   .intro-band,
   .section-heading.split,
   .experience-row,
-  .projects-layout,
   .skills-board,
   .contact-banner,
   .hero-stats {
     grid-template-columns: 1fr;
-  }
-
-  .project-feature-main {
-    grid-column: auto;
   }
 }
 
@@ -451,14 +442,22 @@ body {
 
   .snapshot,
   .experience-card,
-  .project-feature,
   .skill-panel,
   .contact-banner {
     padding: 22px;
   }
 
-  .project-meta {
+  .project-summary {
     flex-direction: column;
     align-items: flex-start;
+    padding: 22px;
+  }
+
+  .project-label {
+    text-align: left;
+  }
+
+  .project-body {
+    padding: 0 22px 22px;
   }
 }
