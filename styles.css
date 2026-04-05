@@ -145,7 +145,7 @@ body {
 }
 
 .hero-main h1 {
-  max-width: 12ch;
+  max-width: 15ch;
   font-family: "Instrument Serif", serif;
   font-size: clamp(2.3rem, 5.2vw, 4rem);
   line-height: 0.98;
