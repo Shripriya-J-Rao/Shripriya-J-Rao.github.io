@@ -91,6 +91,39 @@ body {
   padding-top: 34px;
 }
 
+.hero-strip {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 18px;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.hero-strip span,
+.hero-strip a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.hero-strip a {
+  color: var(--accent);
+}
+
+.hero-strip a:hover {
+  color: var(--ink);
+}
+
 .eyebrow {
   margin: 0 0 14px;
   color: var(--accent);
@@ -457,6 +490,10 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding: 22px;
+  }
+
+  .hero-strip {
+    gap: 10px;
   }
 
   .project-label {
