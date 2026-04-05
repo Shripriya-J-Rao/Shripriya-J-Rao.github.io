@@ -114,8 +114,8 @@ body {
 .hero-main h1 {
   max-width: 12ch;
   font-family: "Instrument Serif", serif;
-  font-size: clamp(3.5rem, 9vw, 6.8rem);
-  line-height: 0.94;
+  font-size: clamp(2.3rem, 5.2vw, 4rem);
+  line-height: 0.98;
   letter-spacing: -0.04em;
 }
 
@@ -180,7 +180,7 @@ body {
 }
 
 .snapshot {
-  padding: 28px;
+  padding: 20px;
 }
 
 .snapshot-label {
@@ -202,30 +202,36 @@ body {
 }
 
 .snapshot h2 {
-  font-size: 2rem;
+  font-size: 1.45rem;
 }
 
 .snapshot p {
-  margin: 16px 0 0;
+  margin: 10px 0 0;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  gap: 10px;
 }
 
 .hero-stats article {
-  padding: 20px;
+  padding: 14px;
 }
 
 .hero-stats span {
   display: block;
   font-family: "Instrument Serif", serif;
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   color: var(--accent);
+}
+
+.hero-stats p {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .hero-stats p,
