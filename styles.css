@@ -41,7 +41,7 @@ body {
   position: relative;
   width: min(1180px, calc(100% - 28px));
   margin: 0 auto;
-  padding: 18px 0 56px;
+  padding: 22px 0 64px;
 }
 
 .topbar {
@@ -87,8 +87,8 @@ body {
 .hero-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 18px;
-  padding-top: 22px;
+  gap: 24px;
+  padding-top: 34px;
 }
 
 .eyebrow {
@@ -114,8 +114,8 @@ body {
 .hero-main h1 {
   max-width: 12ch;
   font-family: "Instrument Serif", serif;
-  font-size: clamp(2.6rem, 6vw, 4.6rem);
-  line-height: 0.96;
+  font-size: clamp(3.5rem, 9vw, 6.8rem);
+  line-height: 0.94;
   letter-spacing: -0.04em;
 }
 
@@ -126,10 +126,10 @@ body {
 
 .hero-copy {
   max-width: 62ch;
-  margin: 14px 0 0;
+  margin: 22px 0 0;
   color: var(--muted);
-  font-size: 0.98rem;
-  line-height: 1.7;
+  font-size: 1.05rem;
+  line-height: 1.9;
 }
 
 .hero-actions,
@@ -137,7 +137,7 @@ body {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-top: 18px;
+  margin-top: 28px;
 }
 
 .button {
@@ -180,7 +180,7 @@ body {
 }
 
 .snapshot {
-  padding: 22px;
+  padding: 28px;
 }
 
 .snapshot-label {
@@ -202,29 +202,29 @@ body {
 }
 
 .snapshot h2 {
-  font-size: 1.55rem;
+  font-size: 2rem;
 }
 
 .snapshot p {
-  margin: 12px 0 0;
+  margin: 16px 0 0;
   color: var(--muted);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 14px;
 }
 
 .hero-stats article {
-  padding: 14px 16px;
+  padding: 20px;
 }
 
 .hero-stats span {
   display: block;
   font-family: "Instrument Serif", serif;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: var(--accent);
 }
 
@@ -238,27 +238,27 @@ body {
 }
 
 .section {
-  padding-top: 58px;
+  padding-top: 82px;
 }
 
 .intro-band {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  gap: 18px;
-  padding-top: 44px;
+  gap: 28px;
+  padding-top: 72px;
   border-top: 1px solid var(--line);
 }
 
 .intro-copy h2,
 .section-heading h2,
 .contact-banner h2 {
-  font-size: clamp(1.15rem, 1.8vw, 1.7rem);
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
 }
 
 .feature-list,
 .experience-card ul,
 .project-points {
-  margin: 14px 0 0;
+  margin: 22px 0 0;
   padding-left: 18px;
 }
 
@@ -271,9 +271,9 @@ body {
 .section-heading.split {
   display: grid;
   grid-template-columns: 180px 1fr;
-  gap: 14px;
+  gap: 20px;
   align-items: start;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
 }
 
 .experience-stack {
