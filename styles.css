@@ -252,7 +252,7 @@ body {
 .intro-copy h2,
 .section-heading h2,
 .contact-banner h2 {
-  font-size: clamp(1.55rem, 3vw, 2.45rem);
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
 }
 
 .feature-list,
@@ -365,18 +365,32 @@ body {
   letter-spacing: 0.14em;
 }
 
-.project-link {
-  display: inline-flex;
-  align-items: center;
+.project-details {
   margin-top: auto;
   padding-top: 18px;
-  color: var(--accent);
-  font-weight: 700;
-  text-decoration: none;
 }
 
-.project-link:hover {
-  color: var(--ink);
+.project-details summary {
+  list-style: none;
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.project-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-details summary::after {
+  content: " +";
+}
+
+.project-details[open] summary::after {
+  content: " -";
+}
+
+.project-details[open] .project-points {
+  margin-top: 14px;
 }
 
 .skills-board {
